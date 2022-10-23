@@ -29,15 +29,56 @@ h4 {
   color: rgb(218, 191, 191);
   font-size: 25px;
 }
+
 footer {
-  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+      rgba(126, 125, 125, 0.4),
+      rgba(126, 125, 125, 0.6)
+    ),
+    url("images/sheep.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+footer h3 {
+  font-size: 20px;
+}
+footer p {
+  font-size: 15px;
+  opacity: 0.7;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: rgb(218, 191, 191);
 }
 a:hover {
   color: darkcyan;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 30px;
+}
+.githublink {
+  text-align: center;
 }
 @media (max-width: 800px) {
   header {
@@ -49,5 +90,11 @@ a:hover {
   }
   header h4 {
     font-size: 15px;
+  }
+  .grid {
+    gap: 10px;
+  }
+  footer h3 {
+    font-size: 18px;
   }
 }
