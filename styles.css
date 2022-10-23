@@ -29,9 +29,31 @@ h4 {
   color: rgb(218, 191, 191);
   font-size: 25px;
 }
-
+main {
+  background-color: aliceblue;
+}
+main h2 {
+  font-size: 20px;
+  color: rgb(218, 191, 191);
+  font-family: "Freehand", cursive;
+  margin: 0px auto;
+  margin-bottom: -10px;
+}
+main h3 {
+  font-size: 30px;
+  margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
+}
+main p {
+  font-family: "DM Sans", sans-serif;
+  margin-top: 5px;
+}
+.paragraph1 {
+  margin: 0 auto;
+}
 footer {
   color: white;
+  font-family: "DM Sans", sans-serif;
   background-image: linear-gradient(
       rgba(126, 125, 125, 0.4),
       rgba(126, 125, 125, 0.6)
@@ -46,7 +68,7 @@ footer {
 section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 100px 0;
 }
 footer h3 {
   font-size: 20px;
@@ -71,11 +93,20 @@ a {
 a:hover {
   color: darkcyan;
 }
-
+.images {
+  max-width: 500px;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   gap: 30px;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .githublink {
   text-align: center;
@@ -91,8 +122,27 @@ a:hover {
   header h4 {
     font-size: 15px;
   }
+  .images {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-right: 30px;
+  }
+  .paragraph1 {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .grid {
+    padding: 20px;
     gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .grid1 {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr;
   }
   footer h3 {
     font-size: 18px;
