@@ -29,6 +29,7 @@ h4 {
   color: rgb(218, 191, 191);
   font-size: 25px;
 }
+
 main {
   background-color: aliceblue;
 }
@@ -51,6 +52,7 @@ main p {
 .paragraph1 {
   margin: 0 auto;
 }
+
 footer {
   color: white;
   font-family: "DM Sans", sans-serif;
@@ -69,6 +71,20 @@ section {
   max-width: 900px;
   margin: 0 auto;
   padding: 100px 0;
+}
+.section2 {
+  background-color: gray;
+  max-width: 100%;
+  padding: 5px;
+}
+.paragraph2 {
+  text-align: center;
+}
+.paragraph2 h2 {
+  padding-top: 20px;
+}
+.paragraph2 h3 {
+  padding-bottom: 5px;
 }
 footer h3 {
   font-size: 20px;
@@ -108,8 +124,35 @@ a:hover {
   padding-left: 20px;
   padding-right: 20px;
 }
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.card h4 {
+  margin-bottom: 0;
+}
+
+.button {
+  display: block;
+  color: gray;
+  background-color: rgb(218, 191, 191);
+  padding: 10px;
+  border-radius: 6px;
+}
 .githublink {
   text-align: center;
+}
+.cardPicture {
+  max-width: 180px;
 }
 @media (max-width: 800px) {
   header {
@@ -133,15 +176,16 @@ a:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .paragraph3 {
+    font-size: 15px;
+  }
   .grid {
     padding: 20px;
     gap: 10px;
     grid-template-columns: 1fr;
   }
   .grid1 {
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     grid-template-columns: 1fr;
   }
   footer h3 {
