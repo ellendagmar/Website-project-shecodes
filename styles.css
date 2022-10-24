@@ -111,6 +111,7 @@ a:hover {
 .imagesGallery {
   max-width: 350px;
   margin: 0 auto;
+  border-radius: 5px;
 }
 .grid {
   display: grid;
